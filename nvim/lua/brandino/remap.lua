@@ -1,6 +1,8 @@
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>vi", vim.cmd.Vifm)
+
 
 
 -- this is brandon's custom
@@ -15,6 +17,18 @@ vim.keymap.set("n", "<leader><F4>",[[:w <cr> :SftpSelectServer thor<cr>:SftpSend
 vim.keymap.set("n", "<leader><F5>",[[:w <cr>:!git add -u <cr> :!git commit -m "update" <cr> :!git svn dcommit <cr> :!git svn rebase <cr>]])
 vim.keymap.set("n", "<leader><F6>",[[:w !git svn rebase <cr>]])
 
+vim.keymap.set("n", "<C-f>",[[:ZoomWinTabToggle<cr>]])
+
+--drop <C-S> default
+vim.keymap.set("n", "<C-s>",[[:wall <cr>]])
+--  set cntl shift s to save 
+vim.keymap.set("n", "<leader><C-s>",[[:mksession! Session.vim <cr>:wall <cr>]])
+--  set cntl shift q to quit all
+vim.keymap.set("n", "<C-Q>",[[:qall <cr>]])
+-- set leader t to TabVifm
+vim.keymap.set("n", "<leader>t", vim.cmd.TabVifm)
+-- set leader v to VsplitVifm
+vim.keymap.set("n", "<leader>v", vim.cmd.VsplitVifm)
 
 
 
@@ -49,7 +63,7 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+--vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")

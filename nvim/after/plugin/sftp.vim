@@ -6,5 +6,6 @@ let g:sftp_sync_servers = {
             \         'port': 22,
             \         'username': 'bcarpent',
             \         'password': 'D!dsbury1',
+            \         'sync_on_save': 1,
             \     }
             \ }

@@ -1,4 +1,4 @@
-vim.cmd [[packadd packer.nvim]]
+vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -15,6 +15,13 @@ return require('packer').startup(function(use)
 	  config = function()
 		  vim.cmd('colorscheme rose-pine')
 	  end
+  })
+  use({
+      'Mofiqul/dracula.nvim',
+      as = 'dracula',
+      config = function()
+          vim.cmd('colorscheme dracula')
+      end
   })
   use { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
@@ -51,5 +58,19 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
+use('itchyny/lightline.vim')
+use('ap/vim-css-color')
+use('vifm/vifm.vim')
+use('troydm/zoomwintab.vim')
+use('vimsence/vimsence')
+use {'stevearc/vim-arduino'}
+
+
 
 end)

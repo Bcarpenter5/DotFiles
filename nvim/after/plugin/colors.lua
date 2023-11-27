@@ -13,6 +13,8 @@ function ColorMyPencils(color)
     vim.api.nvim_set_hl(0, "ColorColumn", {bg = "none"})
     --make other buffers transparent
     vim.api.nvim_set_hl(0, "NormalNC", {bg = "none"})
+    --make sign column transparent
+    vim.api.nvim_set_hl(0, "SignColumn", {bg = "none"})
 
 
 end

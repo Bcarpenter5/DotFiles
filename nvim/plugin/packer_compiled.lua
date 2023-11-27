@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -104,6 +110,12 @@ _G.packer_plugins = {
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  dracula = {
+    config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\0" },
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/dracula",
+    url = "https://github.com/Mofiqul/dracula.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -113,6 +125,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["lightline.vim"] = {
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/lightline.vim",
+    url = "https://github.com/itchyny/lightline.vim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -180,6 +197,16 @@ _G.packer_plugins = {
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vifm.vim"] = {
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/vifm.vim",
+    url = "https://github.com/vifm/vifm.vim"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -189,6 +216,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  vimsence = {
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/vimsence",
+    url = "https://github.com/vimsence/vimsence"
+  },
+  ["zoomwintab.vim"] = {
+    loaded = true,
+    path = "/home/bjc1269/.local/share/nvim/site/pack/packer/start/zoomwintab.vim",
+    url = "https://github.com/troydm/zoomwintab.vim"
   }
 }
 
@@ -197,6 +234,14 @@ time([[Defining packer_plugins]], false)
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
+-- Config for: dracula
+time([[Config for dracula]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme dracula\bcmd\bvim\0", "config", "dracula")
+time([[Config for dracula]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

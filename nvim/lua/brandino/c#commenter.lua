@@ -49,6 +49,7 @@ function WriteComments()
         inBrackets = string.sub(inBrackets,nextComma+1,string.len(inBrackets))
     end
 
+
     --initialize variables
     inBrackets = string.sub(fullString,1,startLocal)
     leave = false
@@ -78,8 +79,8 @@ function WriteComments()
 
     --print out the user input
     local topBottom = "//*************************************************************************"
-    local front = "//  "
-    local tabed = "//       "
+    local front = "//  @"
+    local tabed = "//       @"
 
     lineNum = lineNum-1
     --start
