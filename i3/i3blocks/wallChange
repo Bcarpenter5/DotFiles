@@ -1,0 +1,7 @@
+
+$timer = 30
+
+while true; do  
+    cmd >> feh --randomize --bg-fill ~/Pictures/Walpapers/*
+    sleep $timer
+done
