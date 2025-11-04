@@ -1,4 +1,6 @@
 require("brandino")
+
+
 -- vim.g.copilot_no_tab_map = false
 -- mapc tabl
 vim.cmd('map <Tab> <Nop>')
