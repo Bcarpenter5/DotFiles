@@ -15,9 +15,31 @@ lsp_zero.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+-- require('lspconfig').arduino_language_server.setup({
+--   cmd = {
+--       'arduino-language-server',
+--       -- '-clangd',
+--       -- '/usr/bin/clangd',
+--       '-cli',
+--       '/usr/local/bin/arduino-cli',
+--       "-cli-config",
+--       '~/.arduino15/arduino-cli.yaml',
+--       '-fqbn',
+--       'arduino:avr',
+--       'log-level','verbose',
+--   },
+--   root_dir = function(fname)
+--     return require('lspconfig').util.find_git_ancestor(fname) or vim.fn.getcwd()
+--   end,
+--   filetypes = {"arduino","ino"},
+-- })
+
+
+
+
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'rust_analyzer'},
+  ensure_installed = {'rust_analyzer'},
   handlers = {
     lsp_zero.default_setup,
     lua_ls = function()
