@@ -14,6 +14,7 @@ vim.g.copilot_no_tab_map = true
 vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 vim.api.nvim_set_keymap("i", "<Tab>", 'copilot#Accept("<Tab>")', { silent = true, expr = true })
 
+vim.cmd('autocmd filetype gdscript source ~/.config/nvim/after/plugin/gdscript.lua')
 
 --[[ local function map(mode, lhs, rhs, opts)
   local options = {noremap = true}
