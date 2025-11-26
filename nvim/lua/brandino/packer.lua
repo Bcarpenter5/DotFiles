@@ -12,6 +12,7 @@ return require('packer').startup(function(use)
 
   use {'github/copilot.vim'}
 
+  use 'Bakudankun/PICO-8.vim'
 
   use({
 	  'rose-pine/neovim',
@@ -74,6 +75,7 @@ use('vifm/vifm.vim')
 use('troydm/zoomwintab.vim')
 use('vimsence/vimsence')
 use {'stevearc/vim-arduino'}
+use{'habamax/vim-godot'}
 
 
 
